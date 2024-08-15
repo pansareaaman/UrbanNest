@@ -1,2 +1,0 @@
-# UrbanNest
-A Furniture Website
