@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.h-container{
+    width: 100%;
+    height: 90vh;
+    background-color: #1E1D1D;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.h-left{
+    width: 50%;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: -120px;
+    /* background-color: red; */
+
+    /* margin-top: 150px; */
+}
+.h-left p{
+
+    width: 445px;
+    margin-bottom: 50px;
+    
+        /* width: 40%;
+        font-size: 40px;
+        line-height: 90px;
+        text-align: center; */
+        /* margin-top: 150px; */
+    
+}
+
+.h-right{
+    width: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.h-right img{
+    height: 450px;
+}
+
+
+/* ************************************************************************ */
+
+/* h2 container start */
+
+.h2-container{
+    background: linear-gradient(to right, #535252, #1E1D1D);
+
+    width: 100%;
+    height: 150vh;
+}
+
+.h2-heading{
+    text-align: center;
+}
+.h2-heading-title{
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    
+}
+
+.h2-heading-paragraph{
+    font-size: 25px;
+    width: 540px;
+    margin-inline: auto;
+    font-weight: 200;
+    line-height: 40px;
+}
+
+
+/* ************** */
+
+/* Container for the cards */
+.cards-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly between cards */
+    flex-wrap: wrap; /* Allow cards to wrap onto new lines if needed */
+    padding: 20px;
+    /* background: linear-gradient(to right, #D3D3D3, #646363); */
+     /* Gradient background */
+}
+
+/* Individual card styling */
+.card {
+    width: 300px; /* Set a fixed width for each card */
+    margin: 10px; /* Space between cards */
+    background: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure content does not overflow */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Padding inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Card image styling */
+.card img {
+    width: 100%; /* Ensure the image covers the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #646363; /* Bottom border to separate image from text */
+}
+
+/* Card text styling */
+.card p {
+    margin-top: 15px; /* Space between image and text */
+    font-size: 16px; /* Font size for the description */
+    color: #646363; /* Text color matching the gradient */
+}
+
+/* Hover effect for cards */
+
+.card img {
+    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Slower transition duration */
+}
+
+.card img:hover {
+    transform: scale(1.5); /* Slightly enlarge the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+
+
+
+
+/* ************************************************************* */
+
+/* h3 container start */
+
+.h3-container{
+    background: linear-gradient(to right, #535252, #1E1D1D);
+    width: 100%;
+    height: 200vh;
+    padding-top: 100px;
+}
+
+.h3-wrapper{
+    background-color: #1E1D1D;
+    /* padding-inline: 30px; */
+    height: auto;
+    width: 1100px;
+
+    margin-inline: auto;
+}
+
+.h3-image-container{
+    text-align: center;
+}
+
+.h3-image-container img{
+    height: 500px;
+    margin-top: -335px;
+
+}
+
+
+/* *************************** */
+
+
+/* Cards container with a border */
+.cards-container-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   border-radius: 10px; /* Optional: Rounded corners for the border */
+    margin-top: 30px; /* Add some space above the container */
+}
+
+/* Individual card styling inside the .cards-container-2 */
+.card-2 {
+    width: 430px;
+    margin: 10px;
+    /* background: white; */
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    /* padding: 20px; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* color: #F9D6C3; */
+    border: 3px solid #F9D6C3;
+   
+}
+
+/* Card image styling */
+.card-2 img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #646363;
+}
+
+/* Hover effect for cards */
+.card-2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.view-all-container{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.view-all-container img{
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.view-all-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

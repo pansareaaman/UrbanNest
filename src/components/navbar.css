@@ -1,0 +1,62 @@
+* {
+    color: #F9D6C3;
+    font-family: Montserrat;
+}
+
+.r-underline {
+    text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1E1D1D;
+    padding: 20px;
+}
+
+/* .header-left .logo img{
+    height: 90px;
+} */
+.header-right {
+    width: 35em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0; /* Remove default padding for better layout control */
+    margin: 0; /* Remove default margin */
+}
+
+ul li {
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+}
+
+ul li a {
+    color: #F9D6C3; /* Ensure link text color matches your color scheme */
+    text-decoration: none; /* Remove default underline */
+    padding: 0.5em 0; /* Adjust padding for better spacing */
+    display: inline-block; /* Ensure padding is respected */
+    position: relative; /* Required for pseudo-element positioning */
+}
+
+ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F9D6C3; /* Underline color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+ul li a:hover::after,
+ul li a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
