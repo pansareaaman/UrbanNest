@@ -1,0 +1,97 @@
+/* Carousel.css */
+
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .carousel-card {
+    padding: 10px;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+
+  .cont img{
+    max-width: 150px;
+  }
+
+  /* carousel.css */
+
+.carousel-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    bottom: -60px; /* Adjust as needed */
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space out button group and image container */
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .carousel-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #F9D6C3;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center; /* Center image vertically */
+  }
+  
+  .additional-button {
+    width: 130px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

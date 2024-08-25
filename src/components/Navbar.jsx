@@ -1,14 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../components/navbar.css'
-import Logo from '../assets/logo_image  1.png'
+import Logo from '../assets/logo_image  2.png'
 const Navbar = () => {
   return (
    <>
    <div className="header-container">
     <div className="header-left">
-        {/* <div className="logo"><img src={Logo} alt="" /></div> */}
-        <div className="logo">Logo</div>
+        <div className="logo"><img src={Logo} alt="" /></div>
+        {/* <div className="logo">Logo</div> */}
     </div>
     <div className="header-right">
         <ul>

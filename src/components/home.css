@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 .h-container{
+    margin-top: -120px;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-color: #1E1D1D;
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +28,7 @@
     /* margin-top: 150px; */
 }
 .h-left p{
-
+    margin-top: 75px;
     width: 445px;
     margin-bottom: 50px;
     
@@ -41,8 +42,8 @@
 
 .h-right{
     width: 50%;
-    margin-left: -30px;
-    margin-top: -30px;
+    margin-left: -60px;
+    margin-top: 50px;
 }
 .h-right img{
     height: 450px;
@@ -95,7 +96,7 @@
 .card {
     width: 300px; /* Set a fixed width for each card */
     margin: 10px; /* Space between cards */
-    background: white; /* Card background color */
+    background: #1E1D1D; /* Card background color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     overflow: hidden; /* Ensure content does not overflow */
@@ -115,7 +116,7 @@
 .card p {
     margin-top: 15px; /* Space between image and text */
     font-size: 16px; /* Font size for the description */
-    color: #646363; /* Text color matching the gradient */
+    color: #F9D6C3; /* Text color matching the gradient */
 }
 
 /* Hover effect for cards */
@@ -140,7 +141,7 @@
 .h3-container{
     background: linear-gradient(to right, #535252, #1E1D1D);
     width: 100%;
-    height: 200vh;
+    height: 190vh;
     padding-top: 100px;
 }
 
@@ -199,6 +200,15 @@
     border-bottom: 2px solid #646363;
 }
 
+ #range-2 img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #646363;
+    margin-top: 150px;
+}
+
+
+
 /* Hover effect for cards */
 .card-2:hover {
     transform: scale(1.05);
@@ -220,4 +230,60 @@
 .view-all-container img:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-row-wrapper{
+   
+    padding-bottom: 30px;
+}
+
+.horizontal-row{
+    width: 300px;
+    background-color: #F9D6C3;
+    padding: 1px;
+    border-radius: 50px;
+    width: 70vw;
+    margin-inline: auto;
+}
+
+.h4-container{
+    background: linear-gradient(to right, #535252, #1E1D1D);
+    width: 100%;
+    height: 130vh;
+    padding-top: 100px;
+}
+.h4-heading{
+    text-align: left;
+    padding-left: 150px;
+    padding-bottom: 50px;
+}
+.h4-heading-title{
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.h4-heading-paragraph{
+    font-size: 25px;
+    /* width: 540px; */
+    margin-inline: auto;
+    font-weight: 200;
+    line-height: 40px;
+}
+
+
+
+.horizontal-row-wrapper2{
+    margin-top: 100px;
+
+    padding-bottom: 30px;
+}
+
+.horizontal-row2{
+    width: 300px;
+    background-color: #F9D6C3;
+    padding: 1px;
+    border-radius: 50px;
+    width: 80vw;
+    margin-inline: auto;
 }

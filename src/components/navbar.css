@@ -10,15 +10,20 @@
 .header-container {
     display: flex;
     justify-content: space-around;
-    background-color: #1E1D1D;
+    /* background-color: #1E1D1D; */
     padding: 20px;
+    
 }
 
-/* .header-left .logo img{
+.header-left .logo img{
     height: 90px;
-} */
+    margin: 0;
+    padding: 0;
+    margin-top: -15px;
+}
 .header-right {
     width: 35em;
+    margin-top: 10px;
 }
 
 ul {

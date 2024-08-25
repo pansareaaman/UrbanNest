@@ -1,0 +1,48 @@
+.h-container-contact{
+    margin-top: -120px;
+    width: 100%;
+    height: 100vh;
+    background-color: #2f2e2e;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.h-left-contact{
+    margin-top: 75px;
+    width: 50%;
+    font-size: 50px;
+    line-height: 80px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+    margin-right: -110px;
+    margin-left: 50px;
+    
+    /* background-color: red; */
+
+    /* margin-top: 150px; */
+}
+.h-left-contact p{
+
+    width: 625px;
+    margin-bottom: 110px;
+    
+        /* width: 40%;
+        font-size: 40px;
+        line-height: 90px;
+        text-align: center; */
+        /* margin-top: 150px; */
+    
+}
+
+.h-right-contact{
+    width: 50%;
+    margin-left: -120px;
+    margin-top: 150px;
+}
+.h-right-contact img{
+    height: 450px;
+}
