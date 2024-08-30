@@ -35,7 +35,7 @@ const Home = () => {
         <div className="h-left" data-aos="fade-right">
           <p>Sleek Comfort for Modern Living.</p>
         </div>
-        <div className="h-right" data-aos="flip-down">
+        <div className="h-right" data-aos="fade-left">
           <img src={Sofa} alt="Sofa" />
         </div>
       </div>
