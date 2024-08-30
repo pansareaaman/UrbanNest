@@ -1,289 +1,317 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.h-container{
+
+/* Home Container */
+.h-container {
     margin-top: -120px;
     width: 100%;
-    height: 100vh;
     background-color: #1E1D1D;
     display: flex;
     flex-wrap: wrap;
-
+    min-height: 100vh; /* Ensures it takes at least the full height of the viewport */
 }
 
-.h-left{
+/* Left Section */
+.h-left {
     width: 50%;
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 3.75rem; /* Responsive font size (60px) */
+    line-height: 1.33em; /* Line height adjusted to font size */
     text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    margin-right: -120px;
-    /* background-color: red; */
-
-    /* margin-top: 150px; */
-}
-.h-left p{
-    margin-top: 75px;
-    width: 445px;
-    margin-bottom: 50px;
-    
-        /* width: 40%;
-        font-size: 40px;
-        line-height: 90px;
-        text-align: center; */
-        /* margin-top: 150px; */
-    
+    padding-left: 1.25rem; /* Responsive padding (20px) */
+    margin-right: -7.5rem; /* Adjusted for responsiveness */
 }
 
-.h-right{
+.h-left p {
+    margin-top: 4.688rem; /* Responsive margin (75px) */
+    width: 27.813rem; /* Responsive width (445px) */
+    margin-bottom: 3.125rem; /* Responsive margin (50px) */
+    margin-right: 3rem;
+}
+
+/* Right Section */
+.h-right {
     width: 50%;
-    margin-left: -60px;
-    margin-top: 50px;
-}
-.h-right img{
-    height: 450px;
+    margin-left: -0.75rem; /* Adjusted for responsiveness */
+    margin-top: 3.125rem; /* Responsive margin (50px) */
+    margin-right: 1.25rem;
 }
 
+.h-right img {
+    max-width: 100%;
+    height: 80%; /* Ensure the image is responsive */
+}
 
 /* ************************************************************************ */
 
 /* h2 container start */
 
-.h2-container{
+.h2-container {
     background: linear-gradient(to right, #535252, #1E1D1D);
-
     width: 100%;
-    height: 150vh;
+    padding: 3rem 0; /* Adjust padding to create space instead of fixed height */
 }
 
-.h2-heading{
+.h2-heading {
     text-align: center;
 }
-.h2-heading-title{
-    font-size: 35px;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    
+
+.h2-heading-title {
+    font-size: 2.188rem; /* Responsive font size (35px) */
+    padding: 1.875rem 0 1.25rem; /* Responsive padding (30px top, 20px bottom) */
 }
 
-.h2-heading-paragraph{
-    font-size: 25px;
-    width: 540px;
+.h2-heading-paragraph {
+    font-size: 1.563rem; /* Responsive font size (25px) */
+    max-width: 33.75rem; /* Responsive width (540px) */
     margin-inline: auto;
     font-weight: 200;
-    line-height: 40px;
+    line-height: 2.5rem; /* Responsive line height (40px) */
 }
-
 
 /* ************** */
 
 /* Container for the cards */
 .cards-container {
     display: flex;
-    justify-content: space-around; /* Distribute space evenly between cards */
-    flex-wrap: wrap; /* Allow cards to wrap onto new lines if needed */
-    padding: 20px;
-    /* background: linear-gradient(to right, #D3D3D3, #646363); */
-     /* Gradient background */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1.25rem; /* Responsive padding (20px) */
 }
 
 /* Individual card styling */
 .card {
-    width: 300px; /* Set a fixed width for each card */
-    margin: 10px; /* Space between cards */
-    background: #1E1D1D; /* Card background color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    overflow: hidden; /* Ensure content does not overflow */
-    text-align: center; /* Center align text */
-    padding: 20px; /* Padding inside the card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    width: 18.75rem; /* Responsive width (300px) */
+    margin: 0.625rem; /* Responsive margin (10px) */
+    background: #1E1D1D;
+    border-radius: 0.625rem; /* Responsive border radius (10px) */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adjusted shadow for responsiveness */
+    overflow: hidden;
+    text-align: center;
+    padding: 1.25rem; /* Responsive padding (20px) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Card image styling */
 .card img {
-    width: 100%; /* Ensure the image covers the card width */
-    height: auto; /* Maintain aspect ratio */
-    border-bottom: 2px solid #646363; /* Bottom border to separate image from text */
+    width: 100%;
+    height: auto;
+    border-bottom: 0.125rem solid #646363; /* Responsive border (2px) */
 }
 
 /* Card text styling */
 .card p {
-    margin-top: 15px; /* Space between image and text */
-    font-size: 16px; /* Font size for the description */
-    color: #F9D6C3; /* Text color matching the gradient */
+    margin-top: 0.938rem; /* Responsive margin (15px) */
+    font-size: 1rem; /* Responsive font size (16px) */
+    color: #F9D6C3;
 }
 
 /* Hover effect for cards */
-
 .card img {
-    transition: transform 0.6s ease, box-shadow 0.6s ease; /* Slower transition duration */
+    transition: transform 1.6s ease, box-shadow 0.6s ease;
 }
 
 .card img:hover {
-    transform: scale(1.5); /* Slightly enlarge the card */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: scale(1.5);
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.2); /* Responsive shadow */
 }
-
-
-
-
 
 /* ************************************************************* */
 
 /* h3 container start */
 
-.h3-container{
+.h3-container {
     background: linear-gradient(to right, #535252, #1E1D1D);
     width: 100%;
-    height: 190vh;
-    padding-top: 100px;
+    padding: 3rem 0; /* Adjust padding to create space instead of fixed height */
 }
 
-.h3-wrapper{
+.h3-wrapper {
     background-color: #1E1D1D;
-    /* padding-inline: 30px; */
-    height: auto;
-    width: 1100px;
-
+    width: 80%;
     margin-inline: auto;
 }
 
-.h3-image-container{
+.h3-image-container {
     text-align: center;
+    margin-top: 15rem;
 }
 
-.h3-image-container img{
-    height: 500px;
-    margin-top: -335px;
-
+.h3-image-container img {
+    width: 70%;
+    height: auto; /* Ensure the image is responsive */
+    margin-top: -40%; /* Adjust margin for responsiveness */
 }
-
-
-/* *************************** */
-
 
 /* Cards container with a border */
 .cards-container-2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-   border-radius: 10px; /* Optional: Rounded corners for the border */
-    margin-top: 30px; /* Add some space above the container */
+    border-radius: 0.625rem; /* Responsive border radius (10px) */
+    margin-top: 1.875rem; /* Responsive margin (30px) */
 }
 
 /* Individual card styling inside the .cards-container-2 */
 .card-2 {
-    width: 430px;
-    margin: 10px;
-    /* background: white; */
-    /* border-radius: 10px; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 26.875rem; /* Responsive width (430px) */
+    margin: 0.625rem; /* Responsive margin (10px) */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adjusted shadow for responsiveness */
     overflow: hidden;
     text-align: center;
-    /* padding: 20px; */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* color: #F9D6C3; */
-    border: 3px solid #F9D6C3;
-   
+    border: 0.188rem solid #F9D6C3; /* Responsive border (3px) */
 }
 
 /* Card image styling */
 .card-2 img {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #646363;
+    border-bottom: 0.125rem solid #646363; /* Responsive border (2px) */
 }
 
- #range-2 img {
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #646363;
-    margin-top: 150px;
+#range-2 img {
+    margin-top: 9.375rem; /* Responsive margin (150px) */
 }
-
-
 
 /* Hover effect for cards */
 .card-2:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.2); /* Responsive shadow */
 }
 
-.view-all-container{
-    margin-top: 50px;
-    padding-bottom: 50px;
+.view-all-container {
+    margin-top: 3.125rem; /* Responsive margin (50px) */
+    padding-bottom: 3.125rem; /* Responsive padding (50px) */
     width: 100%;
     text-align: center;
-   
 }
 
-.view-all-container img{
-    width: 150px;
+.view-all-container img {
+    width: 9.375rem; /* Responsive width (150px) */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .view-all-container img:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.2); /* Responsive shadow */
 }
 
-.horizontal-row-wrapper{
-   
-    padding-bottom: 30px;
+/* Horizontal line styling */
+.horizontal-row-wrapper {
+    padding-bottom: 1.875rem; /* Responsive padding (30px) */
 }
 
-.horizontal-row{
-    width: 300px;
+.horizontal-row {
     background-color: #F9D6C3;
-    padding: 1px;
+    padding: 0.063rem; /* Responsive padding (1px) */
     border-radius: 50px;
     width: 70vw;
     margin-inline: auto;
 }
 
-.h4-container{
+/* h4 container start */
+.h4-container {
     background: linear-gradient(to right, #535252, #1E1D1D);
     width: 100%;
-    height: 130vh;
-    padding-top: 100px;
-}
-.h4-heading{
-    text-align: left;
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-.h4-heading-title{
-    font-size: 35px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding: 3rem 0; /* Adjust padding to create space instead of fixed height */
 }
 
-.h4-heading-paragraph{
-    font-size: 25px;
-    /* width: 540px; */
+.h4-heading {
+    text-align: left;
+    padding-left: 9.375rem; /* Responsive padding (150px) */
+    padding-bottom: 3.125rem; /* Responsive padding (50px) */
+}
+
+.h4-heading-title {
+    font-size: 2.188rem; /* Responsive font size (35px) */
+    padding-top: 1.875rem; /* Responsive padding (30px) */
+    padding-bottom: 1.25rem; /* Responsive padding (20px) */
+}
+
+.h4-heading-paragraph {
+    font-size: 1.563rem; /* Responsive font size (25px) */
     margin-inline: auto;
     font-weight: 200;
-    line-height: 40px;
+    line-height: 2.5rem; /* Responsive line height (40px) */
 }
 
-
-
-.horizontal-row-wrapper2{
-    margin-top: 100px;
-
-    padding-bottom: 30px;
+/* Horizontal row for h4 */
+.horizontal-row-wrapper2 {
+    margin-top: 6.25rem; /* Responsive margin (100px) */
+    padding-bottom: 1.875rem; /* Responsive padding (30px) */
 }
 
-.horizontal-row2{
-    width: 300px;
+.horizontal-row2 {
     background-color: #F9D6C3;
-    padding: 1px;
+    padding: 0.063rem; /* Responsive padding (1px) */
     border-radius: 50px;
     width: 80vw;
     margin-inline: auto;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .h-left {
+        font-size: 2.812rem; /* Responsive font size (45px) */
+    }
+
+    .h-left p {
+        width: 80%;
+    }
+
+    .h-right img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+     .card-2 {
+        width: 60%;
+    }
+
+    .h4-heading {
+        padding-left: 5rem; /* Adjust for smaller screens */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .h-left, .h-right {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .h-left p {
+        margin: 2rem auto;
+        margin-top: 10rem;
+    }
+
+    .h-right img {
+        margin-top: -10rem;
+    }
+
+    .card {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+     .card-2 {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .h4-heading {
+        padding-left: 2rem; /* Adjust for smaller screens */
+    }
+
+    
+}
+
+

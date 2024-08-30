@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -13,16 +13,46 @@ import chair3 from '../assets/caro3.png';
 const images = [chair1, chair2, chair3];
 
 const Carousel = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: currentSlide,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     nextArrow: null, // Remove default next arrow
     prevArrow: null, // Remove default previous arrow
   };
+
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Handler to call on window resize
+    const handleResize = () => setWindowWidth(window.innerWidth);
+
+    if(windowWidth>768&&windowWidth<1024){
+      setCurrentSlide(2)
+    }else if(windowWidth<768){
+      setCurrentSlide(1)
+    }else if(windowWidth>=1024){{
+      setCurrentSlide(3)
+    }
+  }
+
+    // Add event listener for resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+
+
+
+
 
   return (
     <div className="carousel-wrapper">

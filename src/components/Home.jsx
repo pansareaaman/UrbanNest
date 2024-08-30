@@ -75,7 +75,7 @@ const Home = () => {
           </div>
 
           <div className="cards-container-2">
-            <div className="card-2" data-aos="fade-up">
+            <div className="card-2" id="range-1" data-aos="fade-up">
               <img src={SofaRange1} alt="Sofa Range 1" />
             </div>
             <div className="card-2" id="range-2" data-aos="fade-up" data-aos-delay="100">
@@ -86,13 +86,13 @@ const Home = () => {
           <div className="view-all-container" data-aos="fade-up">
             <img src={ViewButton} alt="View All" />
           </div>
-          <div className="horizontal-row-wrapper" data-aos="fade-up">
-            <div className="horizontal-row"></div>
-          </div>
         </div>
       </div>
 
       <div className="h4-container" >
+      <div className="horizontal-row-wrapper" data-aos="fade-up">
+            <div className="horizontal-row"></div>
+          </div>
         <div className="h4-heading" data-aos="fade-up">
           <p className="h4-heading-title">Solo Seat Wonders</p>
           <p className="h4-heading-paragraph">
@@ -100,7 +100,7 @@ const Home = () => {
           </p>
         </div>
         <Carousel />
-        <div className="horizontal-row-wrapper2" data-aos="fade-up">
+        <div className="horizontal-row-wrapper2" >
           <div className="horizontal-row2"></div>
         </div>
       </div>
