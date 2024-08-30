@@ -15,17 +15,19 @@ import "aos/dist/aos.css";
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      disable: "phone",
+      // disable: "phone",
       duration: 700,
       easing: "ease-out-cubic",
+      once: false, // Keep animations running on scroll
     });
   }, []);
   useEffect(() => {
     AOS.init({
       once: false,
-      disable: "phone",
+      // disable: "phone",
       duration: 900,
       easing: "ease-out-cubic",
+      once: false, // Keep animations running on scroll
     });
   }, []);
 
