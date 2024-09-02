@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #F9D6C3;
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
 }
 
 /* Home Container */
@@ -13,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh; /* Ensures it takes at least the full height of the viewport */
+   
 }
 
 /* Left Section */

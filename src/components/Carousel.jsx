@@ -32,7 +32,7 @@ const Carousel = () => {
     // Handler to call on window resize
     const handleResize = () => setWindowWidth(window.innerWidth);
 
-    if(windowWidth>768&&windowWidth<1024){
+    if(windowWidth>=768&&windowWidth<1024){
       setCurrentSlide(2)
     }else if(windowWidth<768){
       setCurrentSlide(1)

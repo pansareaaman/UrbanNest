@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../components/home.css";
 import Sofa from "../assets/home-sofa.png";
 import CardImage1 from "../assets/cardImg1.png";
@@ -13,9 +14,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({
-      // disable: "phone",
+      disable: "phone",
       duration: 700,
       easing: "ease-out-cubic",
       once: false, // Keep animations running on scroll
@@ -31,10 +35,14 @@ const Home = () => {
     });
   }, []);
 
+  const handleViewAllClick = () => {
+    navigate("/products");
+  };
+
   return (
     <>
       <div className="h-container">
-        <div className="h-left" data-aos="fade-right">
+        <div className="h-left" >
           <p>Sleek Comfort for Modern Living.</p>
         </div>
         <div className="h-right" data-aos="fade-left">
@@ -86,8 +94,13 @@ const Home = () => {
           </div>
 
           <div className="view-all-container" data-aos="fade-up">
-            <img src={ViewButton} alt="View All" />
-          </div>
+        <img
+          src={ViewButton}
+          alt="View All"
+          onClick={handleViewAllClick}
+          style={{ cursor: "pointer" }}
+        />
+      </div>
         </div>
       </div>
 

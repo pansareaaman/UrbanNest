@@ -1,37 +1,49 @@
-/* Reset styles */
+/* Basic Reset */
 * {
-    color: #F9D6C3; /* Ensuring consistent text color */
-    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    color: #F9D6C3;
+    font-family: Montserrat, sans-serif;
 }
 
-.r-underline {
-    text-decoration: none;
-}
-
+/* Header Container */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #1E1D1D;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    z-index: 999;
 }
 
+/* Logo */
 .header-left .logo img {
-    height: 90px;
+    max-width: 200px; /* Adjust logo size */
 }
 
+/* Menu Items - Desktop */
 .header-right {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    gap: 20px;
 }
 
-ul {
+.header-right ul {
     display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style: none;
+}
+
+.header-right li {
+    margin: 0 10px;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #F9D6C3; /* Change to your preferred text color */
+    font-weight: bold;
 }
 
 ul li {
@@ -67,7 +79,7 @@ ul li a.active::after {
     transform-origin: bottom left;
 }
 
-/* Mobile menu styles */
+/* Menu Toggle Button - Mobile */
 .header-menu-toggle {
     display: none;
     cursor: pointer;
@@ -77,39 +89,51 @@ ul li a.active::after {
     width: 30px;
 }
 
+/* Mobile View */
 @media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
+    /* Hide menu items and display the toggle button */
+    .header-container{
+        background-color: #1E1D1D;
     }
-
     .header-right {
-        width: 100%;
-        display: none; /* Hide menu links by default on mobile */
-        flex-direction: column;
-        margin-top: 10px;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #1E1D1D; /* Change to your preferred background color */
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
-
-    .header-menu-toggle {
-        display: block;
-    }
-
+  
     .header-right.show {
-        display: flex; /* Show menu links when toggled */
+      display: flex;
     }
-
-    ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
+  
+    .header-right ul {
+      flex-direction: column;
+      align-items: center;
     }
-
-    ul li {
-        width: 100%;
-        text-align: center;
+  
+    .header-right li {
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
     }
-
-    ul li a {
-        padding: 1em;
+  
+    .header-right a {
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    /* Display the toggle button */
+    .header-menu-toggle {
+      display: block;
+    }
+    
+    ul li a:hover::after,
+    ul li a.active::after {
+       display: none;
     }
 }
