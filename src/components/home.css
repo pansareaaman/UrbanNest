@@ -15,7 +15,7 @@
     background-color: #1E1D1D;
     display: flex;
     flex-wrap: wrap;
-    min-height: 100vh; /* Ensures it takes at least the full height of the viewport */
+    min-height: 110vh; /* Ensures it takes at least the full height of the viewport */
    
 }
 

@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({
-      disable: "phone",
+      // disable: "phone",
       duration: 700,
       easing: "ease-out-cubic",
       once: false, // Keep animations running on scroll
@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <>
       <div className="h-container">
-        <div className="h-left" >
+        <div className="h-left" data-aos="fade-right" >
           <p>Sleek Comfort for Modern Living.</p>
         </div>
         <div className="h-right" data-aos="fade-left">
