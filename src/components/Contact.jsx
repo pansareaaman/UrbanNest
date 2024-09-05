@@ -5,10 +5,10 @@ const Contact = () => {
   return (
     <>
      <div className="h-container-contact">
-        <div className="h-left-contact"  data-aos="fade-right">
+        <div className="h-left-contact" >
           <p>Let’s Make Your Dream Space a Reality</p>
         </div>
-        <div className="h-right-contact"  data-aos="fade-left">
+        <div className="h-right-contact"  >
           <img src={ContactImg} alt="" />
         </div>
       </div>

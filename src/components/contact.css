@@ -1,48 +1,106 @@
-.h-container-contact{
+.h-container-contact {
     margin-top: -120px;
     width: 100%;
-    height: 100vh;
     background-color: #2f2e2e;
     display: flex;
     flex-wrap: wrap;
-
+    min-height: 110vh;
 }
 
-.h-left-contact{
-    margin-top: 75px;
+/* Adjusts for larger screens */
+.h-left-contact {
     width: 50%;
-    font-size: 48px;
-    line-height: 80px;
+    font-size: 3rem; /* Responsive font size */
+    line-height: 1.33em; 
     text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 60px;
-    margin-right: -110px;
-    margin-left: 50px;
-    
-    /* background-color: red; */
-
-    /* margin-top: 150px; */
-}
-.h-left-contact p{
-
-    width: 625px;
-    margin-bottom: 110px;
-    
-        /* width: 40%;
-        font-size: 40px;
-        line-height: 90px;
-        text-align: center; */
-        /* margin-top: 150px; */
-    
+    padding-left: 1.25rem; 
+    margin-right: -7.5rem; 
 }
 
-.h-right-contact{
+.h-left-contact p {
+    margin-top: -0.312rem;
+    width: 43.813rem;
+    margin-bottom: 3.125rem;
+    margin-right: -16rem;
+}
+
+.h-right-contact {
     width: 50%;
-    margin-left: -120px;
-    margin-top: 150px;
+    margin-left: 3.25rem;
+    margin-top: 11.125rem;
+    margin-right: 1.25rem;
 }
-.h-right-contact img{
-    height: 450px;
+
+.h-right-contact img {
+    max-width: 100%;
+    height: 80%; 
+}
+
+/* Responsive for tablets (up to 1024px) */
+@media (max-width: 1024px) {
+    .h-left-contact {
+        font-size: 2.5rem; /* Slightly smaller font size */
+        padding-left: 1rem;
+        margin-right: -5rem; /* Adjust margin */
+    }
+
+    .h-left-contact p {
+        width: 35rem; /* Narrower paragraph width */
+        margin-right: -10rem;
+    }
+
+    .h-right-contact {
+        margin-left: 2.5rem;
+        margin-top: 8rem; /* Reduce margin top */
+    }
+}
+
+/* Responsive for mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    .h-left-contact {
+        width: 100%;
+        font-size: 2rem; /* Smaller font size */
+        padding-left: 0.75rem;
+        margin-right: 0;
+        text-align: center; /* Center the text on mobile */
+        padding: 2rem; /* Add padding for better spacing */
+    }
+
+    .h-left-contact p {
+        width: 100%; /* Use full width for paragraph */
+        margin-right: 0;
+        margin-bottom: -17rem;
+    }
+
+    .h-right-contact {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 2rem;
+        text-align: center; /* Center the image */
+    }
+
+    .h-right-contact img {
+        height: auto; /* Let the image adjust naturally */
+    }
+}
+
+/* Responsive for small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .h-left-contact {
+        font-size: 1.5rem; /* Even smaller font size */
+        padding-left: 0.5rem;
+    }
+
+    .h-right-contact {
+        padding: 1rem;
+    }
+
+    .h-left-contact p {
+        width: 100%;
+        margin-bottom: -13.5rem;
+    }
 }
