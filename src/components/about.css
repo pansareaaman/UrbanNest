@@ -104,16 +104,16 @@
 
 
 .h3-heading-title-about {
-    font-size: 1.5rem; /* Responsive font size (35px) */
+    font-size: 2rem; /* Responsive font size (35px) */
     padding: 1.875rem 0 1.25rem; /* Responsive padding (30px top, 20px bottom) */
 }
 
 .h3-heading-paragraph-about {
-    font-size: 1.188rem;
+    font-size: 1.5rem;
     max-width: 57.75rem;
     margin-inline: auto;
     font-weight: 200;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .h3-item img {

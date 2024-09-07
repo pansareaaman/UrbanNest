@@ -1,3 +1,4 @@
+/* Original Contact Section Styles */
 .h-container-contact {
     margin-top: -120px;
     width: 100%;
@@ -7,7 +8,7 @@
     min-height: 110vh;
 }
 
-/* Adjusts for larger screens */
+/* Left side of the contact section */
 .h-left-contact {
     width: 50%;
     font-size: 3rem; /* Responsive font size */
@@ -27,6 +28,7 @@
     margin-right: -16rem;
 }
 
+/* Right side of the contact section */
 .h-right-contact {
     width: 50%;
     margin-left: 3.25rem;
@@ -104,3 +106,295 @@
         margin-bottom: -13.5rem;
     }
 }
+
+/* New Section Styles */
+.h-container-new-section {
+    width: 100%;
+    background-image: url('../assets/contactbgimg.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 110vh;
+    margin-top: -20px;
+}
+
+/* Left side of the new section */
+.h-left-new-section {
+    width: 50%;
+    font-size: 3rem;
+    color: white; /* Text color to contrast with the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.25rem;
+    text-align: left;
+}
+
+/* Right side of the new section */
+.h-right-new-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* New div with black background */
+.map-background {
+    width: 100%;
+    height: 80%;
+    margin: 4rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Map container inside the black background div */
+.map-container {
+    width: 80%; /* Adjust size as needed */
+    height: 80%; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the map circular */
+    overflow: hidden; /* Ensures the map fits within the circular border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    /* margin: 20px; */
+}
+
+.map-container iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive for tablets (up to 1024px) */
+@media (max-width: 1024px) {
+    .h-left-new-section {
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    .map-background {
+        margin: 4rem;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .map-container {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+/* Responsive for mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    .h-left-new-section {
+        width: 100%;
+        font-size: 2rem;
+        padding-left: 0.75rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .h-right-new-section {
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .map-background {
+        margin: 4rem;
+    }
+
+    .map-container {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+/* Responsive for small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .h-left-new-section {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .h-right-new-section {
+        padding: 1rem;
+    }
+
+    .map-background {
+        margin: 4rem;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding:0% 5%;
+    background-color: #1E1D1D;
+    color: #F9D6C3;
+  }
+  
+  .contact-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  .contact-info p{
+    font-size: 22px;
+  }
+  .contact-info p strong{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  hr{
+    display: none;
+  }
+  .vertical-line {
+    width: 2px;
+    background-color: #F9D6C3;
+    margin: 40px 10px;
+  }
+  
+  .contact-form {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-form h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #F9D6C3;
+    text-align: center;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border: none; /* Remove all borders */
+    border-bottom: 1px solid #F9D6C3; /* Apply border only at the bottom */
+    background-color: #1E1D1D;
+    color: #F9D6C3;
+  }
+  .contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #F9D6C3; 
+  opacity: 1;
+}
+  .contact-form button:hover {
+    background-color: #F9D6C3;
+    color: #2f2f2f;
+  }
+  .submitButton{
+    width: 150px;
+  }
+  .contact-form h1{
+    text-align: center;
+    margin-bottom: 35px;
+  }  
+    [data-aos] {
+        opacity: 1 !important;
+    }
+@media (max-width: 768px) {
+  .contact-info p{
+    font-size: 18px;
+  }
+  .contact-info p strong{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .contact-form h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #F9D6C3;
+    text-align: center;
+  }
+  .contact-form form {
+    gap:10px;
+  }  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 19px;    
+  }
+  .submitButton{
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    flex-direction: column;
+    background-color: #1E1D1D;
+    color: #F9D6C3;
+    width: 100%;
+    gap: 0;
+  }
+  .vertical-line{
+    display: none;
+  }
+  hr{
+    display:flex;
+    height: 2px; /* Sets the thickness of the line */
+    background-color: #F9D6C3; /* Changes the color of the line */
+    margin: 20px 30px; /* Adds space above and below the line */
+  }
+  
+  .contact-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+  }
+  .contact-info p {
+      font-size: 18px;
+  }
+
+  .contact-info p strong {
+      font-size: 18px;
+  }
+  .contact-form{
+    width: 100%;
+  }
+}
+
+
+

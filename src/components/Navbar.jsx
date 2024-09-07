@@ -10,6 +10,8 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsMenuOpen(prevState => !prevState);
 
+  const closeMenu = () => setIsMenuOpen(false); // Function to close the menu
+
   useEffect(() => {
     const handleOutsideClick = (event) => {
       if (containerRef.current && !containerRef.current.contains(event.target)) {
@@ -37,22 +39,22 @@ const Navbar = () => {
       <div className={`header-right ${isMenuOpen ? 'show' : ''}`}>
         <ul>
           <li>
-            <NavLink to="/" className="r-underline" activeClassName="active">
+            <NavLink to="/" className="r-underline" activeClassName="active" onClick={closeMenu}>
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/products" className="r-underline" activeClassName="active">
+            <NavLink to="/products" className="r-underline" activeClassName="active" onClick={closeMenu}>
               PRODUCTS
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" className="r-underline" activeClassName="active">
+            <NavLink to="/about" className="r-underline" activeClassName="active" onClick={closeMenu}>
               ABOUT US
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="r-underline" activeClassName="active">
+            <NavLink to="/contact" className="r-underline" activeClassName="active" onClick={closeMenu}>
               CONTACT US
             </NavLink>
           </li>
