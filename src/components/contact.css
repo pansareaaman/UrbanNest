@@ -5,7 +5,9 @@
     background-color: #2f2e2e;
     display: flex;
     flex-wrap: wrap;
-    min-height: 110vh;
+    min-height: 105vh;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Left side of the contact section */
@@ -116,7 +118,7 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 110vh;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 
 /* Left side of the new section */
@@ -394,6 +396,11 @@
   }
   .contact-form{
     width: 100%;
+  }
+  .h-left-new-section p{
+    color: #1E1D1D;
+    font-weight: 800;
+    font-size: 2rem;
   }
 }
 
