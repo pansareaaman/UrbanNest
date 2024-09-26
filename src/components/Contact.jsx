@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="h-left-contact" data-aos="fade-right">
           <p>Let’s Make Your Dream Space a Reality</p>
         </div>
-        <div className="h-right-contact" data-aos="fade-left">
+        <div className="h-right-contact" >
           <img src={ContactImg} alt="Contact" />
         </div>
       </div>
@@ -52,7 +52,7 @@ const Contact = () => {
         <div className="h-left-new-section" data-aos="fade-right">
           <p>Find Your Perfect Sofa Right Where We Are</p>
         </div>
-        <div className="h-right-new-section" data-aos="fade-left">
+        <div className="h-right-new-section">
           <div className="map-background">
             <div className="map-container">
               <iframe
