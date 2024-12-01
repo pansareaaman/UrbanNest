@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import ButtonImage from '../assets/Button 2.png';
 import chair1 from '../assets/p1s.png';
 import chair2 from '../assets/p2s.png';
+// import chair2 from '../assets/productImages/pi (150).jpg';
 import chair3 from '../assets/p3s.png';
 
 const images = [chair1, chair2, chair3];

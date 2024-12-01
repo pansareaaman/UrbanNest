@@ -33,3 +33,28 @@ h1 {
 .product-image:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
+
+select {
+    display: block; /* Makes it behave as a block element */
+    margin: 0 auto; /* Centers it horizontally */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #1E1D1D;
+    
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+  
+  .MuiPagination-ul {
+    justify-content: center;
+    color: antiquewhite;
+  }
