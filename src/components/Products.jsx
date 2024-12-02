@@ -78,12 +78,22 @@ const Products = () => {
           count={totalPages}
           page={currentPage}
           onChange={handlePageChange}
-          size="small"
+          size="big"
           sx={{
-            '& .MuiPaginationItem-root.Mui-selected': {
-              backgroundColor: '#F9D6C3',
-              color: '#000',  // Change the text color if necessary
+            '& .MuiPaginationItem-root': {
+              backgroundColor: '#F9D6C3', // Default background color for unselected items
+              color: '#000',  // Text color for unselected items
+              opacity: 0.5,  // Reduce opacity for unselected pagination items
             },
+            '& .MuiPaginationItem-root.Mui-selected': {
+              backgroundColor: '#F9D6C3', // Background color for selected item
+              color: '#000',  // Text color for selected item
+              opacity: 1,  // Full opacity for selected item
+            },
+            '& .MuiPaginationItem-root:hover': {
+              backgroundColor: '#F9D6C3', // Hover effect for unselected items
+              opacity: 0.8,  // Reduce opacity on hover for unselected items
+            }
           }}
         />
       </Stack>
