@@ -56,7 +56,7 @@ const Contact = () => {
           <div className="map-background">
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1413457654297!2d-122.419415584681!3d37.77492927975879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b1e09c5cf%3A0x57e33f40b19b572a!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1632827405398!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787.8353289798218!2d73.89495965168766!3d18.44440064352414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea539bab452d%3A0x682f949597f79b7!2sCVVW%2BR74%2C%20Danny%20Mehata%20Nagar%2C%20Kondhwa%20Budruk%2C%20Pune%2C%20Maharashtra%20411048%2C%20India!5e1!3m2!1sen!2sus!4v1733991697582!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -65,7 +65,7 @@ const Contact = () => {
                 title="map">
               </iframe>
             </div>
-            <h2>Visit Our Shop</h2>
+            <h2> <a href="https://maps.app.goo.gl/aFaGA6rXzts6hEpi6">Visit Our Shop</a></h2>
           </div>
         </div>
       </div>
@@ -74,3 +74,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+
+
